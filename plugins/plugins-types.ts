@@ -172,6 +172,9 @@ type DefaultPlugins = {
   };
   removeViewBox: void;
   removeXMLProcInst: void;
+  scale: {
+    size: number;
+  };
   sortAttrs: {
     order?: Array<string>;
     xmlnsOrder?: 'front' | 'alphabetical';
@@ -242,6 +245,7 @@ export type BuiltinsWithRequiredParams = {
     id?: string | Array<string>;
     class?: string | Array<string>;
   };
+  removeElementsBySelector: any;
 };
 
 type PluginsParams = BuiltinsWithOptionalParams & BuiltinsWithRequiredParams;
